@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="enter_number_to_here">Enter Number To Here</string>
+    <string name="result">Result :</string>
+    <string name="plus">+</string>
+    <string name="negative">-</string>
+    <string name="multiplication">×</string>
+    <string name="split">÷</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editNumber1"
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="68dp"
+        android:background="#99737272"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_number_to_here"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNumber2"
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="68dp"
+        android:background="#99737272"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_number_to_here"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editNumber1"
+        app:layout_constraintStart_toStartOf="@+id/editNumber1"
+        app:layout_constraintTop_toBottomOf="@+id/editNumber1" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="80dp"
+        android:background="#99737272"
+        android:gravity="center|left"
+        android:text="@string/result"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/editNumber2"
+        app:layout_constraintStart_toStartOf="@+id/editNumber2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="413dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumber2">
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_buttons"
+            android:onClick="plus"
+            android:text="@string/plus"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/negativeButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_buttons2"
+            android:gravity="center"
+            android:onClick="negative"
+            android:text="@string/negative"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/multiplicationButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_buttons3"
+            android:gravity="center"
+            android:onClick="multiplication"
+            android:text="@string/multiplication"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/splitButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_buttons4"
+            android:gravity="center"
+            android:onClick="split"
+            android:text="@string/split"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
